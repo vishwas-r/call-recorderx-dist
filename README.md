@@ -74,4 +74,4 @@ To prevent Android's battery-saving engine from terminating the background recor
 
 ## 🤝 Support and Contact
 
-Developed by **Vishwas R**. Visit [vishwas.me](https://vishwas.me/) for more information or updates.
+Developed by **Vishwas R**. Visit [vishwas.me](https://vishwas.me/).
