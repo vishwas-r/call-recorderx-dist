@@ -45,6 +45,8 @@
             color: var(--primary);
             margin: 0 0 10px 0;
             letter-spacing: -0.05em;
+            text-decoration: none;
+            display: inline-block;
         }
 
         .subtitle {
@@ -89,6 +91,15 @@
             margin-bottom: 10px;
         }
 
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -102,7 +113,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">Call RecorderX</div>
+            <a href="index.html" class="logo">Call RecorderX</a>
             <p class="subtitle">Privacy Policy</p>
             <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">Last Updated: May 23, 2026</p>
         </header>
@@ -154,7 +165,7 @@
             <p>If you have any questions or suggestions regarding this Privacy Policy, feel free to contact us:</p>
             <ul>
                 <li>Developer: <strong>Vishwas R</strong></li>
-                <li>Website: <a href="https://vishwas.me/" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: bold;">https://vishwas.me/</a></li>
+                <li>Website: <a href="https://vishwas.me/" target="_blank">https://vishwas.me/</a></li>
             </ul>
         </div>
 

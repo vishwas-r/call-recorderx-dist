@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call RecorderX | Private & Secure Local Call Recording</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #080a0f;
+            --card-bg: rgba(21, 24, 31, 0.7);
+            --primary: #10b981;
+            --primary-hover: #059669;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: rgba(16, 185, 129, 0.2);
+            --glass-border: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                              radial-gradient(circle at 10% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 60px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--primary) 0%, #059669 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #000;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.04em;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            letter-spacing: -0.05em;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 35px auto;
+            font-weight: 300;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: #0b0d11;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.25);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(16, 185, 129, 0.35);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.04);
+            color: var(--text-main);
+            border: 1px solid var(--glass-border);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--border-color);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .privacy-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(5, 150, 105, 0.02) 100%);
+            border: 1px dashed var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .privacy-box h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.7rem;
+            color: var(--primary);
+        }
+
+        .privacy-box p {
+            margin: 0 auto;
+            max-width: 650px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo-icon">R</div>
+                <div class="logo-text">Call RecorderX</div>
+            </div>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Secure, High-Fidelity Call Recording</h1>
+            <p>A fully featured, offline-first call recording utility built with modern, elegant design. Keeps your conversations clear and strictly confidential.</p>
+            
+            <div class="cta-group">
+                <a href="https://github.com/Vishwas-R/call-recorderx-dist/raw/main/dist/call-recorderx.apk" class="btn btn-primary">Download Signed APK</a>
+                <a href="privacy.html" class="btn btn-secondary">View Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="privacy-box">
+            <h2>🔒 100% Offline & Private</h2>
+            <p>Call RecorderX works entirely locally on your device. Audio recordings, contact maps, and caller lists are processed and stored locally. We never compile, upload, or share your sensitive data with external servers.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <span class="feature-icon">🎙️</span>
+                <h3>High-Fidelity Audio</h3>
+                <p>Ensures crystal-clear call audio capture for both incoming and outgoing connections using native recording modules.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📊</span>
+                <h3>Dual Dashboard Layouts</h3>
+                <p>Toggle seamlessly between detailed interactive card structures and high-density, full-width flat table listings.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">⭐</span>
+                <h3>Starred Overlays</h3>
+                <p>Quickly star important call records with golden indicator badges floating on detailed avatar circles.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Call RecorderX. Developed by <a href="https://vishwas.me/" target="_blank">Vishwas R</a>. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="https://github.com/Vishwas-R/call-recorderx-dist" target="_blank">Github Repository</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
