@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call RecorderX | Private & Secure Local Call Recording for Android</title>
+    <title>Call RecorderX</title>
     <meta name="description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
     
     <!-- Favicon -->
@@ -11,14 +11,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dev.csultimates.com/crx/">
-    <meta property="og:title" content="Call RecorderX | Private & Secure Local Call Recording for Android">
+    <meta property="og:title" content="Call RecorderX">
     <meta property="og:description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
     <meta property="og:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://dev.csultimates.com/crx/">
-    <meta property="twitter:title" content="Call RecorderX | Private & Secure Local Call Recording for Android">
+    <meta property="twitter:title" content="Call RecorderX">
     <meta property="twitter:description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
     <meta property="twitter:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
@@ -50,7 +50,8 @@
         <!-- Hero Section -->
         <main>
             <section class="hero">
-                <h1>Privacy-First Automatic Call Recording</h1>
+				<h1>Call RecorderX</h1>
+                <h5>Privacy-First Automatic Call Recording</h5>
                 <p>An elegant, fully offline call logging application for Android. Runs completely on your local hardware with zero analytics trackers and no internet access required.</p>
                 
                 <div class="cta-group">
@@ -59,9 +60,42 @@
                 </div>
             </section>
 
-            <!-- Embedded Widescreen Mockup Banner -->
-            <section class="mockup-container">
-                <img src="assets/images/call-recorderx-banner.png" alt="Call RecorderX Advertisement Banner" class="mockup-image">
+            <!-- Core Purpose & Permissions Disclosure Section -->
+            <section class="purpose-section" style="margin-bottom: 48px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 32px; border-radius: 16px;">
+                <div class="section-header" style="margin-bottom: 24px; text-align: center;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 8px;">🛡️</span>
+                    <h2>Core Purpose & Security Disclosures</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 8px auto 0 auto;">Learn how Call RecorderX works, why it requires specific permissions, and how your privacy is protected.</p>
+                </div>
+                
+                <div style="line-height: 1.6; color: var(--text-secondary); font-size: 0.95rem; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">🎯 1. What is Call RecorderX?</h4>
+                        <p>
+                            <strong>Call RecorderX</strong> is a dedicated local utility designed to automatically record, organize, and catalog incoming and outgoing telephone calls on Android devices. Built for professionals and individuals who need reliable records of their business and personal voice conversations, the app operates strictly offline by default to guarantee absolute data privacy and security.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">⚙️ 2. Why does the app require sensitive permissions?</h4>
+                        <p style="margin-bottom: 12px;">
+                            To automate call recording seamlessly on Android's secure operating system, Call RecorderX utilizes specific system permissions. Each permission is used strictly for local automation and call log organization:
+                        </p>
+                        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; gap: 8px; display: flex; flex-direction: column;">
+                            <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> To capture and encode the voice call audio into lightweight WAV, MP3, AAC, or AMR files stored locally.</li>
+                            <li><strong>Phone State (<code>READ_PHONE_STATE</code>):</strong> To detect when a phone call starts and ends, allowing the app's background recording service to initiate and terminate recording sessions automatically.</li>
+                            <li><strong>Contacts (<code>READ_CONTACTS</code>):</strong> To look up phone numbers locally and map them to contact names, allowing your recorded files to be clearly labeled (e.g., <em>"John Doe"</em> instead of <em>"+1234567890"</em>).</li>
+                            <li><strong>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>):</strong> Required specifically on modern Android versions (Android 10+) to retrieve the incoming/outgoing caller ID to properly catalog recordings. This is a local service connector that never reads personal text inputs, passwords, or personal screen data.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--text-primary); margin-bottom: 8px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">☁️ 3. Google Drive Integration & Scopes</h4>
+                        <p>
+                            To allow secure cloud backups, Call RecorderX offers an optional Google Drive synchronization feature. By connecting your Google account, the app uses the secure <code>drive.file</code> scope to create a dedicated <em>"Call RecorderX"</em> folder on your personal Drive and upload local recordings into it. All connections occur directly and securely over HTTPS between your device and Google's servers, and we never access, view, or store any of your files.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!-- Core Quick Badges -->
