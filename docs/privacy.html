@@ -11,17 +11,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vishwas-r.github.io/call-recorderx-dist/privacy.html">
+    <meta property="og:url" content="https://dev.csultimates.com/crx/privacy.html">
     <meta property="og:title" content="Privacy Policy | Call RecorderX">
     <meta property="og:description" content="Read the privacy policy of Call RecorderX. 100% offline-first application with no data collection or tracking.">
-    <meta property="og:image" content="https://vishwas-r.github.io/call-recorderx-dist/assets/images/logo.png">
+    <meta property="og:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://vishwas-r.github.io/call-recorderx-dist/privacy.html">
+    <meta property="twitter:url" content="https://dev.csultimates.com/crx/privacy.html">
     <meta property="twitter:title" content="Privacy Policy | Call RecorderX">
     <meta property="twitter:description" content="Read the privacy policy of Call RecorderX. 100% offline-first application with no data collection or tracking.">
-    <meta property="twitter:image" content="https://vishwas-r.github.io/call-recorderx-dist/assets/images/logo.png">
+    <meta property="twitter:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +59,19 @@
             </div>
 
             <div class="privacy-card">
-                <h2>3. Permissions Utilized</h2>
+                <h2>3. Optional Google Drive Integration (User-Initiated Backup)</h2>
+                <p>To provide you with secure, optional cloud backups of your locally saved call recordings, Call RecorderX supports integration with <strong>Google Drive</strong>. This integration is fully optional and user-controlled:</p>
+                <ul>
+                    <li><strong>Google OAuth Scopes:</strong> When you connect your Google Account in Settings, the app requests access to the <code>https://www.googleapis.com/auth/drive.file</code> scope. This permission is restricted to creating, viewing, and modifying only files and folders that were specifically created by Call RecorderX.</li>
+                    <li><strong>Data Purpose & Storage:</strong> This scope is strictly used to create a dedicated backup folder named <em>"Call RecorderX"</em> in your personal Drive and upload your recording audio files into it.</li>
+                    <li><strong>Local Credentials Safety:</strong> The authentication tokens, access keys, and credentials are saved locally on your Android device's secure private storage (SharedPreferences) and are never sent to us or any intermediate servers.</li>
+                    <li><strong>Direct Connections:</strong> All API communication and file transfer activities happen entirely and securely over direct HTTPS connections between your personal Android device and Google's official cloud storage API. We never see, access, store, or sell any of your call data or cloud files.</li>
+                    <li><strong>Full Control:</strong> You can disconnect your Google account, delete cloud files, or toggle the background sync properties completely at any time in the app's settings.</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>4. Permissions Utilized</h2>
                 <p>To automate call capturing natively on the Android operating system, Call RecorderX utilizes the following system permissions. They are exclusively used for local operations:</p>
                 <ul>
                     <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Required to capture the audio during phone conversations for creating local recordings.</li>

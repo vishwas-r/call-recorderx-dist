@@ -8,20 +8,19 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vishwas-r.github.io/call-recorderx-dist/">
+    <meta property="og:url" content="https://dev.csultimates.com/crx/">
     <meta property="og:title" content="Call RecorderX | Private & Secure Local Call Recording for Android">
     <meta property="og:description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
-    <meta property="og:image" content="https://vishwas-r.github.io/call-recorderx-dist/assets/images/logo.png">
+    <meta property="og:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://vishwas-r.github.io/call-recorderx-dist/">
+    <meta property="twitter:url" content="https://dev.csultimates.com/crx/">
     <meta property="twitter:title" content="Call RecorderX | Private & Secure Local Call Recording for Android">
     <meta property="twitter:description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
-    <meta property="twitter:image" content="https://vishwas-r.github.io/call-recorderx-dist/assets/images/logo.png">
+    <meta property="twitter:image" content="https://dev.csultimates.com/crx/assets/images/logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,6 +168,35 @@
                             <span class="feature-tag">7 Color Accents</span>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Google Drive Cloud Sync & Data Disclosure Section -->
+            <section class="oauth-disclosure-section" style="margin-bottom: 48px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 32px; border-radius: 16px;">
+                <div class="section-header" style="margin-bottom: 24px; text-align: center;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 8px;">☁️</span>
+                    <h2>Optional Google Drive Cloud Backups</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 8px auto 0 auto;">Learn how Call RecorderX securely synchronizes your local recordings with your personal cloud storage.</p>
+                </div>
+                
+                <div style="line-height: 1.6; color: var(--text-secondary); font-size: 0.95rem; max-width: 800px; margin: 0 auto;">
+                    <p style="margin-bottom: 16px;">
+                        <strong>Call RecorderX</strong> is fully offline and local by default. To provide optional, reliable cloud backups for your call recordings, the app integrates with <strong>Google Drive</strong>. When enabled, this feature allows you to securely save your audio files to a dedicated folder in your personal cloud.
+                    </p>
+                    
+                    <div style="background: rgba(255, 255, 255, 0.02); border-left: 4px solid #4285F4; padding: 16px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+                        <h4 style="color: #4285F4; margin-bottom: 8px; font-size: 1.05rem;">🔐 OAuth Scope & Data Usage Disclosure:</h4>
+                        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; gap: 8px; display: flex; flex-direction: column;">
+                            <li><strong>Scope Accessed:</strong> <code>https://www.googleapis.com/auth/drive.file</code> (Create new files and folders, and open/edit files that you create with this app).</li>
+                            <li><strong>Purpose of Access:</strong> To create a dedicated folder named <em>"Call RecorderX"</em> in your personal Google Drive and upload local call recording audio files (WAV, MP3, AAC, or AMR) directly into it for backup and recovery.</li>
+                            <li><strong>Local Security:</strong> All user authentication credentials and tokens are saved locally in the Android device's private secure storage (SharedPreferences) and are never sent to any third-party or developer-controlled servers.</li>
+                            <li><strong>Direct Communication:</strong> All sync transmissions occur directly and securely over HTTPS between your Android device and Google's official Drive API servers. We do not host, monitor, access, or sell any of your call data or cloud files.</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="font-size: 0.9rem; margin-top: 16px;">
+                        You can enable or disable Google Drive Auto-Sync, trigger a manual upload of unsynced files, or completely disconnect your Google Account at any time in the app's <strong>Settings ➔ Google Drive Backup</strong> panel.
+                    </p>
                 </div>
             </section>
 
