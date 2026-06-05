@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call RecorderX</title>
-    <meta name="description" content="A secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
+    <title>Call RecorderX - Privacy-First Call Recording for Android</title>
+    <meta name="description" content="Call RecorderX is a secure, offline-first automatic call recorder for Android. Zero internet permission, zero tracking, 100% free, and completely ad-free.">
+    
+    <!-- Google Site Verification (Paste your verification code below for Search Console ownership verification) -->
+    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE" /> -->
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -206,31 +209,41 @@
                 </div>
             </section>
 
-            <!-- Google Drive Cloud Sync & Data Disclosure Section -->
+            <!-- Cloud Sync & OAuth Data Disclosure Section -->
             <section class="oauth-disclosure-section" style="margin-bottom: 48px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 32px; border-radius: 16px;">
                 <div class="section-header" style="margin-bottom: 24px; text-align: center;">
                     <span style="font-size: 2.5rem; display: block; margin-bottom: 8px;">☁️</span>
-                    <h2>Optional Google Drive Cloud Backups</h2>
-                    <p style="color: var(--text-secondary); max-width: 600px; margin: 8px auto 0 auto;">Learn how Call RecorderX securely synchronizes your local recordings with your personal cloud storage.</p>
+                    <h2>Optional Cloud Backups (Google Drive & Box)</h2>
+                    <p style="color: var(--text-secondary); max-width: 600px; margin: 8px auto 0 auto;">Learn how Call RecorderX securely synchronizes your local recordings with your personal cloud storage accounts.</p>
                 </div>
                 
-                <div style="line-height: 1.6; color: var(--text-secondary); font-size: 0.95rem; max-width: 800px; margin: 0 auto;">
-                    <p style="margin-bottom: 16px;">
-                        <strong>Call RecorderX</strong> is fully offline and local by default. To provide optional, reliable cloud backups for your call recordings, the app integrates with <strong>Google Drive</strong>. When enabled, this feature allows you to securely save your audio files to a dedicated folder in your personal cloud.
+                <div style="line-height: 1.6; color: var(--text-secondary); font-size: 0.95rem; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                    <p>
+                        <strong>Call RecorderX</strong> is a local-first utility app designed to record voice calls on-device. For users who wish to backup their recordings securely, Call RecorderX provides optional integrations with <strong>Google Drive</strong> and <strong>Box</strong>. When configured, these integrations upload your recorded call audio files directly from your phone to your personal cloud folders.
                     </p>
                     
-                    <div style="background: rgba(255, 255, 255, 0.02); border-left: 4px solid #4285F4; padding: 16px; margin: 20px 0; border-radius: 0 8px 8px 0;">
-                        <h4 style="color: #4285F4; margin-bottom: 8px; font-size: 1.05rem;">🔐 OAuth Scope & Data Usage Disclosure:</h4>
+                    <!-- Google Drive Disclosure -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border-left: 4px solid #4285F4; padding: 16px; border-radius: 0 8px 8px 0;">
+                        <h4 style="color: #4285F4; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">🤖 Google Drive Integration & Scopes</h4>
                         <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; gap: 8px; display: flex; flex-direction: column;">
-                            <li><strong>Scope Accessed:</strong> <code>https://www.googleapis.com/auth/drive.file</code> (Create new files and folders, and open/edit files that you create with this app).</li>
-                            <li><strong>Purpose of Access:</strong> To create a dedicated folder named <em>"Call RecorderX"</em> in your personal Google Drive and upload local call recording audio files (WAV, MP3, AAC, or AMR) directly into it for backup and recovery.</li>
-                            <li><strong>Local Security:</strong> All user authentication credentials and tokens are saved locally in the Android device's private secure storage (SharedPreferences) and are never sent to any third-party or developer-controlled servers.</li>
-                            <li><strong>Direct Communication:</strong> All sync transmissions occur directly and securely over HTTPS between your Android device and Google's official Drive API servers. We do not host, monitor, access, or sell any of your call data or cloud files.</li>
+                            <li><strong>Scope Requested:</strong> <code>https://www.googleapis.com/auth/drive.file</code> (View and manage Google Drive files and folders that you have opened or created with this app).</li>
+                            <li><strong>Purpose of Access:</strong> The app requests this permission to create a dedicated folder named <em>"Call RecorderX"</em> inside your Google Drive and upload call recording audio files (AMR, MP3, AAC, WAV) directly into it.</li>
+                            <li><strong>Data Handling:</strong> All synchronization occurs directly over secure HTTPS links between your device and the Google Drive API endpoints. Your OAuth credentials, access tokens, and files are stored strictly on-device or in your personal Drive and are never shared or sent to any developer or third-party servers.</li>
                         </ul>
                     </div>
-                    
-                    <p style="font-size: 0.9rem; margin-top: 16px;">
-                        You can enable or disable Google Drive Auto-Sync, trigger a manual upload of unsynced files, or completely disconnect your Google Account at any time in the app's <strong>Settings ➔ Google Drive Backup</strong> panel.
+
+                    <!-- Box Disclosure -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border-left: 4px solid #0061D5; padding: 16px; border-radius: 0 8px 8px 0;">
+                        <h4 style="color: #0061D5; margin-bottom: 8px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;">📦 Box Cloud Integration & Scopes</h4>
+                        <ul style="list-style-type: disc; margin-left: 20px; font-size: 0.9rem; gap: 8px; display: flex; flex-direction: column;">
+                            <li><strong>Permission Scopes:</strong> <code>root_readwrite</code> (Read and write all files and folders in the user's Box account).</li>
+                            <li><strong>Purpose of Access:</strong> This permission enables the app to create a dedicated folder named <em>"Call RecorderX"</em> and upload your call recording files directly from your phone to your Box cloud storage.</li>
+                            <li><strong>Data Handling:</strong> All file uploads and credential checks are carried out directly over HTTPS between your Android device and Box's official API endpoints. We do not run any intermediate servers, and we never access, view, store, or share your account credentials or files.</li>
+                        </ul>
+                    </div>
+
+                    <p style="font-size: 0.9rem;">
+                        You can easily turn cloud sync on or off, initiate manual uploads of local recordings, or completely sign out from Google Drive or Box at any time directly in the app's <strong>Settings ➔ Cloud Backups</strong> screen.
                     </p>
                 </div>
             </section>
