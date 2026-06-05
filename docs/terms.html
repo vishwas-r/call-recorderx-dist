@@ -29,19 +29,32 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="privacy-container" style="padding-top: 48px; padding-bottom: 48px;">
+    <div class="container">
         <!-- Header -->
-        <header class="privacy-header">
-            <a href="index.html" class="logo-container">
+        <header>
+            <a href="index.html" class="logo-container" style="text-decoration: none;">
                 <img src="assets/images/logo.png" alt="Call RecorderX Logo" class="logo-img">
-                <span class="logo-text">Call RecorderX</span>
+                <div class="logo-text">Call RecorderX</div>
+                <span class="early-access-badge">Early Access</span>
             </a>
-            <p class="subtitle" style="margin-top: 8px;">Terms of Service</p>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 4px;">Last Updated: June 5, 2026</p>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="https://github.com/vishwas-r/call-recorderx-dist" target="_blank" class="github-link-icon" id="header-github-link">
+                    <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor" style="display:inline-block;vertical-align:text-bottom;">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    GitHub
+                </a>
+            </nav>
         </header>
 
         <!-- Document Sections -->
-        <main>
+        <main style="max-width: 800px; margin: 0 auto; width: 100%;">
+            <section class="section-header" style="text-align: left; margin-bottom: 36px;">
+                <h1 style="font-size: 2.8rem; background: linear-gradient(135deg, #FFFFFF 50%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px;">Terms of Service</h1>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Last Updated: June 5, 2026</p>
+            </section>
             <div class="privacy-card">
                 <h2>1. Acceptance of Terms</h2>
                 <p>Welcome to <strong>Call RecorderX</strong>, a mobile application designed to record, catalog, and manage telephone conversations locally on Android devices. Developed by <strong>Vishwas R</strong>, this application is provided to you subject to your compliance with these Terms of Service. By accessing or using the application, you agree to be bound by these Terms.</p>
@@ -102,12 +115,13 @@
         </main>
 
         <!-- Footer -->
-        <footer style="margin-top: 48px;">
+        <footer>
             <p>&copy; 2026 Call RecorderX. Developed by <a href="https://vishwas.me/" target="_blank">Vishwas R</a>. All rights reserved.</p>
             <div class="footer-links">
-                <a href="index.html">Home Landing Page</a>
                 <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
                 <a href="https://github.com/vishwas-r/call-recorderx-dist" target="_blank">GitHub Repository</a>
+                <a href="https://github.com/vishwas-r/call-recorderx-dist/issues" target="_blank">Report an Issue</a>
             </div>
         </footer>
     </div>

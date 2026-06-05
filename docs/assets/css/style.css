@@ -1,14 +1,14 @@
 :root {
-    --bg-color: #0B0F19;
-    --card-bg: rgba(22, 32, 50, 0.7);
-    --primary: #10B981;
-    --primary-glow: rgba(16, 185, 129, 0.15);
-    --primary-hover: #059669;
+    --bg-color: #060913;
+    --card-bg: rgba(13, 20, 35, 0.65);
+    --primary: #1E60FF;
+    --primary-glow: rgba(30, 96, 255, 0.15);
+    --primary-hover: #0052E0;
     --text-main: #FFFFFF;
     --text-secondary: #94A3B8;
     --text-muted: #64748B;
-    --border-color: #2E3D56;
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --border-color: #1E2943;
+    --glass-border: rgba(255, 255, 255, 0.06);
     --accent-purple: #8B5CF6;
     --accent-purple-glow: rgba(139, 92, 246, 0.15);
 }
@@ -187,14 +187,14 @@ nav a:hover {
 
 .btn-primary {
     background-color: var(--primary);
-    color: #0B0F19;
+    color: #FFFFFF;
     box-shadow: 0 4px 20px var(--primary-glow);
 }
 
 .btn-primary:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 8px 24px rgba(30, 96, 255, 0.4);
 }
 
 .btn-secondary {
@@ -215,9 +215,9 @@ nav a:hover {
     border-radius: 24px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(16, 185, 129, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 40px rgba(30, 96, 255, 0.05);
     margin-bottom: 72px;
-    background-color: #080C14;
+    background-color: #050811;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,7 +320,7 @@ nav a:hover {
 
 .feature-card:hover {
     border-color: var(--primary);
-    box-shadow: 0 12px 36px rgba(16, 185, 129, 0.08);
+    box-shadow: 0 12px 36px rgba(30, 96, 255, 0.08);
     transform: translateY(-4px);
 }
 
@@ -334,8 +334,8 @@ nav a:hover {
     width: 44px;
     height: 44px;
     border-radius: 10px;
-    background-color: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    background-color: rgba(30, 96, 255, 0.1);
+    border: 1px solid rgba(30, 96, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,13 +375,13 @@ nav a:hover {
 
 .feature-tag-primary {
     color: var(--primary);
-    border-color: rgba(16, 185, 129, 0.2);
-    background-color: rgba(16, 185, 129, 0.05);
+    border-color: rgba(30, 96, 255, 0.2);
+    background-color: rgba(30, 96, 255, 0.05);
 }
 
 /* --- Setup / Configuration Guide --- */
 .guide-section {
-    background-color: rgba(22, 32, 50, 0.4);
+    background-color: rgba(13, 20, 35, 0.4);
     border: 1px solid var(--border-color);
     border-radius: 24px;
     padding: 48px 32px;
