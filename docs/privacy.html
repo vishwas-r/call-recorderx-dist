@@ -91,7 +91,7 @@
                     <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Required to capture the audio during phone conversations for creating local recordings.</li>
                     <li><strong>Phone State & Call Log (<code>READ_PHONE_STATE</code>, <code>READ_CALL_LOG</code>):</strong> Used to detect active call transitions (incoming/outgoing calls starting and ending) to automatically start and stop recording processes.</li>
                     <li><strong>Contacts (<code>READ_CONTACTS</code>):</strong> Used locally to look up the names associated with active phone numbers so that your recorded files can be labeled with recognizable contact names instead of raw digits.</li>
-                    <li><strong>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>):</strong> Used strictly to identify the caller phone number of active telephone events to properly organize and group recordings. No screen content, passwords, or personal keystrokes are processed or read.</li>
+                    <li><strong>Accessibility Service (<code>BIND_ACCESSIBILITY_SERVICE</code>):</strong> Used strictly to identify the caller phone number of active telephone events, and to detect call transitions (starting/ending) in supported VOIP applications (such as WhatsApp, Telegram, Facebook Messenger, Signal, Viber, WeChat, Imo, Zoom, Microsoft Teams, Google Meet, Slack, Skype, and Discord) to automate audio recording. No screen content, passwords, keystrokes, or personal data are read, processed, or transmitted.</li>
                 </ul>
             </div>
 
