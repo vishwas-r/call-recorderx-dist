@@ -7,7 +7,9 @@
 ## ✨ Features
 
 *   **🔒 Privacy-First Architecture**: Audio encoding, processing, and storage are done entirely on-device. The app does not send any telemetry or voice data to any remote servers.
-*   **⚙️ Automatic Recording**: Automatically starts recording when a call is established.
+*   **⚙️ Automatic Recording**: Automatically starts recording when a two-way phone call is established.
+*   **🛡️ VOIP Call Recording**: Automatically detects and records audio from 13 popular VOIP apps: WhatsApp, WhatsApp Business, Telegram, Telegram X, Facebook Messenger, Messenger Lite, Signal, Viber, WeChat, Imo, Zoom, Microsoft Teams, Google Meet (Google Chat), Slack, Skype, and Discord for both voice and video calls.
+*   **☁️ Scoped Cloud Backup & Two-Way Restore**: Securely backup your recordings to personal Google Drive or Box cloud folders using direct HTTPS transfer. Browse and restore synced cloud recordings back to your device local storage at any time.
 *   **🎯 Filter by Caller Type**: Choose to record:
     *   **All Numbers**: Record every call.
     *   **Unknown Only**: Record only callers not in your contact list.
